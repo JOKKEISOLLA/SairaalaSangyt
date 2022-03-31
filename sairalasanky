@@ -30,7 +30,7 @@ Citizen.CreateThread(function()
 				sleep = 7
 				local BedCoords = GetEntityCoords(CurrentBed)
 
-				Draw3DText(BedCoords + vector3(0.0, 0.0, 0.5), '~g~[E]~s~ maataksesi')
+				Draw3DText(BedCoords + vector3(0.0, 0.0, 0.5), '[E] Maataksesi')
 			end
 		end
 		Citizen.Wait(sleep)
@@ -64,7 +64,7 @@ Citizen.CreateThread(function()
         elseif CurrentBed ~= nil and OnBed then
 			sleep = 7
 			
-			Draw3DText(BedCoords + vector3(0.0, 0.0, 0.5), '~o~[X]~s~ Noustaksesi')
+			Draw3DText(BedCoords + vector3(0.0, 0.0, 0.5), '[X] Noustaksesi')
 			if IsControlJustReleased(0, 105) then
             	ClearPedTasks(PlayerPedId())
 
